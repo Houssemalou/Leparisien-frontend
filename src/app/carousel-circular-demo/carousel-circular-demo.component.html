@@ -1,0 +1,31 @@
+
+<div class="card" >
+    <section class="section-title">
+        FRENCH TACOS 🌮
+    </section>
+    
+    <p-carousel 
+        [value]="products" 
+        [numVisible]="3" 
+        [numScroll]="3" 
+        [circular]="true" 
+        [responsiveOptions]="responsiveOptions" 
+        autoplayInterval="3000">
+        <ng-template let-product pTemplate="item">
+             
+            <div class="menu-item">
+                <div class="item-content">
+                    <h3>French Taco Spinaci Mozzarella</h3>
+                    <p>with spinach and Mozzarella</p>
+                    <span class="price">€6.50</span>
+                </div>
+                <div class="item-image">
+                    <img src="assets/img/menu-6.jpg" alt="French Taco Spinaci Mozzarella">
+                    <button class="add-button">+</button>
+                </div>
+            </div>
+            </ng-template>
+    </p-carousel>
+
+
+</div>

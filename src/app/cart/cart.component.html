@@ -1,0 +1,86 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="checkout-wrap">
+                <ul class="checkout-bar">
+                    <li class="active first">
+                        <span class="step-number">1</span>
+                        <br>
+                        <strong class="step-text">Shopping Cart</strong>
+                    </li>
+                    <li class="next">
+                        <span class="step-number">2</span>
+                        <br>
+                        <strong class="step-text">Shipping and Checkout</strong>
+                    </li>
+                    <li>
+                        <span class="step-number">3</span>
+                        <br>
+                        <strong class="step-text">Confirmation</strong>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-8">
+            <div class="card">
+                <div class="table-responsive">
+                    <table class="table table-borderless table-shopping-cart">
+                        <!-- Tableau -->
+                    </table>
+                </div>
+                <div class="card-body border-top">
+                    <!-- Boutons -->
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card mb-3">
+                <div class="card-body">
+                    <form >
+                        <div class="form-group">
+                            <label>Have coupon?</label>
+                            <div class="input-group">
+                                <input type="text" class="form-control"  name="couponCode" placeholder="Coupon code">
+                                <span class="input-group-append"> 
+                                    <button class="btn btn-primary" type="submit" >Apply</button>
+                                </span>
+                            </div>
+                        </div>
+                    </form>
+                </div> <!-- card-body.// -->
+            </div> 
+            <div class="card">
+                <div class="card-body">
+                    <dl class="dlist-align">
+                        <dt>Total price:</dt>
+                        <dd class="text-right">TND 300</dd>
+                    </dl>
+                    <dl class="dlist-align" *ngIf="discount > 0">
+                        <dt>Discount:</dt>
+                        <dd class="text-right">TND 20</dd>
+                    </dl>
+                    <dl class="dlist-align">
+                        <dt><strong>Total:</strong></dt>
+                        <dd class="text-left">TND 322</dd>
+                    </dl>
+                    <hr>
+                    <p class="text-center mb-3">
+                        <img src="assets/img/visa.png" height="26">
+                    </p>
+                </div> <!-- card-body.// -->
+            </div>  <!-- card .// -->
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12">
+            <div class="alert alert-success mt-3">
+                <p class="icontext"><i class="icon text-success fa fa-truck"></i> Free Delivery within 1-2 weeks</p>
+            </div>
+        </div>
+    </div>
+</div>
