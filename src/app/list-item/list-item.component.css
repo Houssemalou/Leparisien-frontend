@@ -1,0 +1,16 @@
+img{
+    width: 90px;
+    height: 90px;
+    border-image: 20px;
+}
+.card{
+    height: 110px;
+}
+.card:hover{
+    box-shadow: 3px 2px 4px orange;
+    transform: scale3d(25);
+    -webkit-transform: scale3d(25);
+    -moz-transform: scale3d(25);
+    -ms-transform: scale3d(25);
+    -o-transform: scale3d(25);
+}
