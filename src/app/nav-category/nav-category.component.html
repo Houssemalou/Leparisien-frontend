@@ -1,0 +1,38 @@
+<div class="card" id="navCategory">
+    <div class="flex mb-2 gap-2 flex-end">
+        <p-button 
+            (click)="activeItem = items[0]" 
+            [rounded]="true" 
+            label="1" 
+            styleClass="w-2rem h-2rem p-0" 
+            [outlined]="activeItem !== items[0]" />
+        <p-button 
+            (click)="activeItem = items[1]" 
+            [rounded]="true" 
+            label="2" 
+            styleClass="w-2rem h-2rem p-0" 
+            [outlined]="activeItem !== items[1]" />
+        <p-button 
+            (click)="activeItem = items[2]" 
+            [rounded]="true" 
+            label="3" 
+            styleClass="w-2rem h-2rem p-0" 
+            [outlined]="activeItem !== items[2]" />
+        <p-button 
+            (click)="activeItem = items[3]" 
+            [rounded]="true" 
+            label="4" 
+            styleClass="w-2rem h-2rem p-0" 
+            [outlined]="activeItem !== items[3]" />
+    </div>
+    <p-tabMenu 
+        [model]="items" 
+        [activeItem]="activeItem" 
+        (activeItemChange)="onActiveItemChange($event)" 
+        styleClass="aloui" />
+</div>
+
+<section data-label="Pizza" style="height: 600px; background: #f1f1f1; margin-bottom: 10px;">Pizza Section</section>
+<section data-label="Crêpe" style="height: 600px; background: #e2e2e2; margin-bottom: 10px;">Crêpe Section</section>
+<section data-label="Hamburger" style="height: 600px; background: #d3d3d3; margin-bottom: 10px;">Hamburger Section</section>
+<section data-label="Boissons Gazeuses" style="height: 600px; background: #c4c4c4;">Boissons Gazeuses Section</section>

@@ -1,11 +1,16 @@
-img{
-    width: 200px;
-    height: 200px;
-}
-.card {
+.hhh {
     background: var(--surface-card);
     margin: 20px;
     padding: 2rem;
     border-radius: 10px;
     margin-bottom: 1rem;
 }
+
+.container{
+    padding:15px;
+    margin-top: 10px;
+}
+.ff-secondary {
+    font-family: 'Pacifico', cursive;
+}
+

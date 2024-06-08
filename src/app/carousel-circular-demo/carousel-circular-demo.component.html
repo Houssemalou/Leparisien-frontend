@@ -1,14 +1,20 @@
-<div class="card">
+<div class="container">
+    <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+        <h5 class="section-title ff-secondary text-center text-primary fw-normal">Food Menu</h5>
+        <h1 class="mb-5">Most Popular Items In Sold</h1>
+    </div>
+</div>
+<div class="container-sm soldItems">
     <p-carousel 
         [value]="products" 
-        [numVisible]="3" 
-        [numScroll]="3" 
-        [circular]="true" 
+        [numVisible]="4" 
+        [numScroll]="2" 
+        [circular]="false" 
         [responsiveOptions]="responsiveOptions" 
-        autoplayInterval="3000">
+        autoplayInterval="6000">
         <ng-template let-product pTemplate="item">
-                <div class="border-1 surface-border border-round m-2 p-3">
-                    <div class="mb-3">
+                <div class="border-1 surface-border border-round m-2 p-3 soldItems">
+                    <div class="mb-3 text-center">
                         <div class="relative mx-auto">
                             <img 
                                 src="https://primefaces.org/cdn/primeng/images/demo/product/{{ product.image }}" 
