@@ -1,5 +1,5 @@
 <!-- Topbar Start -->
-<div class="container-fluid bg-dark px-5 d-none d-lg-block">
+<div class="container-fluid bg-dark px-5 d-none d-lg-block"  id="navId">
     <div class="row gx-0 align-items-center" style="height: 55px;">
         <div class="col-lg-8 text-center text-lg-start mb-lg-0">
             <div class="d-flex flex-wrap">
@@ -21,8 +21,8 @@
 <!-- Topbar End -->
 
 <!-- Navbar & Hero Start -->
-<div class="container-fluid position-relative p-0 navbar1 " id="navId">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light  px-4 px-lg-5 py-3 py-lg-0">
+<div class="container-fluid position-relative p-0 navbar1 ">
+    <nav class="navbar navbar-expand-lg navbar-light   px-4 px-lg-5 py-3 py-lg-0">
         <a href="index.html" class="navbar-brand p-0">
             <h1 class="text-primary m-0 fas"><i class="fas fa-star-of-life me-3"></i>Le Paresien</h1>
         </a>
@@ -31,7 +31,7 @@
         </button>
         <div class="collapse navbar-collapse myElement" id="navbarCollapse">
             <div class="navbar-nav ms-auto py-0">
-                <a href="index.html" class="nav-item nav-link active">Home</a>
+                <a href="index.html" class="nav-item nav-link  active">Home</a>
                 <a href="about.html" class="nav-item nav-link">About</a>
                 <a href="service.html" class="nav-item nav-link">Services</a>
                 <div class="nav-item dropdown">
@@ -47,9 +47,7 @@
                 </div>
                 <a href="contact.html" class="nav-item nav-link">Contact Us</a>
             </div>
-            
-        
-    
+            <a href="#" class="btn btn1 rounded-pill text-white py-2 px-4 flex-wrap flex-sm-shrink-0"><i class="fas fa-cart-shopping"></i>Card</a>
         </div>
     </nav>
 </div>
@@ -60,40 +58,19 @@
     <div class="container text-center py-5" style="max-width: 900px;">
         <div class="hero">
             <div class="container">
-                <div class="row">
-                    <div class="col content">
-                        <div class="header">
-                            <p class="tagline">Do not miss it!</p>
-                            <h1>Pizza Tastes Better</h1>
-                            <h1>Than Skinny Feels</h1>
-                            <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Cart</button>
-
-                            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
-                              <div class="offcanvas-header" >
-                                
-                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                              </div>
-                              <div class="offcanvas-body" >
-                                <app-cart></app-cart>
-                              </div>
-                            </div>
-                        
-                        </div>
-                  
-                    </div>
+              <div class="row">
+                <div class="col content">
+                  <div class="header">
+                    <p class="tagline">Do not miss it!</p>
+                    <h1>Pizza Tastes Better</h1>
+                    <h1>Than Skinny Feels</h1>
+                  </div>
+                  <!-- search -->
                 </div>
+              </div>
             </div>
         </div>
     </div>
 </div>
 
-    
-<div class="container-fluid">
-    <div class="container">
-        <div class="row align-items-center"> <!-- Ajout de la classe row et align-items-center -->
-            <div class="col">
-                <p-tabMenu [model]="items"></p-tabMenu>
-        </div>
-    </div>
-</div>
-
+<!-- Header End -->

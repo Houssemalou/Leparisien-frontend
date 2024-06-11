@@ -8,7 +8,10 @@
 .btn1{
     background-color: #FEA116;
 }
-
+li a{
+    color: #DDDDDD !important;
+    font-size: 10px;
+}
 
 .topbar a,
 .topbar a i {
@@ -73,13 +76,13 @@
     color: var(--bs-dark) !important;
     font-size: 16px;
     font-weight: 400;
-    outline: none;
+    
     transition: .5s;
 }
 
-.sticky-top.navbar-light .navbar-nav .nav-link {
+.navbar-light .navbar-nav .nav-link {
     padding: 20px 0;
-    color: var(--dark) !important;
+    color: var(--bs-light) !important;
 }
 
 .navbar-light .navbar-nav .nav-link:hover,
@@ -127,15 +130,15 @@
 .navbar .nav-item:hover .dropdown-menu {
     transform: rotateX(0deg);
     visibility: visible;
-    background: var(--bs-orange) !important;
+    background: var(--bs-light) !important;
     transition: .5s;
     opacity: 1;
 }
 
+
 .myClass{
     position: sticky !important;
     top: 0px !important;
-    background-color: rgb(21, 178, 196);
     z-index: 99999999999999999;
 }
 
@@ -214,23 +217,9 @@
     background-repeat: no-repeat;
     background-size: cover;
     padding: 160px 0 60px 0;
-    ;
 }
 
 .bg-breadcrumb .breadcrumb-item a {
     color: var(--bs-orange) !important;
 }
 /*** Single Page Hero Header End ***/
-/* Default style for the tab items */
-/* Default style for the tab items */
-.p-tabmenu .p-tabmenu-nav .p-tabmenuitem .p-menuitem-link {
-    color: black !important; /* Default color */
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-/* Style for the tab items on hover */
-.p-tabmenu .p-tabmenu-nav .p-tabmenuitem .p-menuitem-link:hover {
-    color: blue !important; /* Hover color */
-    text-decoration: none;
-}

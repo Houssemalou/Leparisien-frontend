@@ -1,31 +1,45 @@
-
-<div class="card" >
-    <section class="section-title">
-        FRENCH TACOS 🌮
-    </section>
-    
+<div class="container">
+    <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+        <h5 class="section-title ff-secondary text-center text-primary fw-normal">Food Menu</h5>
+        <h1 class="mb-5">Most Popular Items In Sold</h1>
+    </div>
+</div>
+<div class="container-sm soldItems">
     <p-carousel 
         [value]="products" 
-        [numVisible]="3" 
-        [numScroll]="3" 
-        [circular]="true" 
+        [numVisible]="4" 
+        [numScroll]="2" 
+        [circular]="false" 
         [responsiveOptions]="responsiveOptions" 
-        autoplayInterval="3000">
+        autoplayInterval="6000">
         <ng-template let-product pTemplate="item">
-             
-            <div class="menu-item">
-                <div class="item-content">
-                    <h3>French Taco Spinaci Mozzarella</h3>
-                    <p>with spinach and Mozzarella</p>
-                    <span class="price">€6.50</span>
+                <div class="border-1 surface-border border-round m-2 p-3 soldItems">
+                    <div class="mb-3 text-center">
+                        <div class="relative mx-auto">
+                            <img 
+                                src="https://primefaces.org/cdn/primeng/images/demo/product/{{ product.image }}" 
+                                [alt]="product.name" 
+                                class="w-full border-round" />
+                            <p-tag 
+                                [value]="product.inventoryStatus" 
+                                [severity]="getSeverity(product.inventoryStatus)" 
+                                class="absolute" 
+                                [ngStyle]="{ 'left.px': 5, 'top.px': 5 }" />
+                        </div>
+                    </div>
+                    <div class="mb-3 font-medium">
+                        {{ product.name }}
+                    </div>
+                    <div class="flex justify-content-between align-items-center">
+                    <div class="mt-0 font-semibold text-xl">
+                        {{ '$' + product.price }}
+                    </div>
+                        <span>
+                            <p-button icon="pi pi-heart" severity="secondary" [outlined]="true" />
+                            <p-button icon="pi pi-shopping-cart" styleClass="ml-2" />
+                        </span>
+                    </div>
                 </div>
-                <div class="item-image">
-                    <img src="assets/img/menu-6.jpg" alt="French Taco Spinaci Mozzarella">
-                    <button class="add-button">+</button>
-                </div>
-            </div>
             </ng-template>
     </p-carousel>
-
-
 </div>

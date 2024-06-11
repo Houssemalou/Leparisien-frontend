@@ -4,30 +4,28 @@ import { Product, data } from '../../models/Product' ;
 import { CarouselModule } from 'primeng/carousel';
 import { ButtonModule } from 'primeng/button';
 import { TagModule } from 'primeng/tag';
-import { MenuItem } from 'primeng/api';
-import { SidebarModule } from 'primeng/sidebar';
+
 @Component({
     selector: 'carousel-circular-demo',
     templateUrl: './carousel-circular-demo.component.html',
     styleUrl: './carousel-circular-demo.component.css',
     standalone: true,
-    imports: [CarouselModule, ButtonModule, TagModule,SidebarModule,ButtonModule],
+    imports: [CarouselModule, ButtonModule, TagModule],
     providers: []
 })
 export class CarouselCircularDemo implements OnInit{
     products: Product[] = data;
- 
   
 
 
     responsiveOptions: any[] | undefined;
 
-    constructor() {
-        
-    }
+    constructor() {}
 
     ngOnInit() {
-    
+        /*this.productService.getProductsSmall().then((products) => {
+            this.products = products;
+        });*/
 
        this.responsiveOptions = [
             {

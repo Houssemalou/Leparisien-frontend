@@ -1,0 +1,17 @@
+<div class="card" id="navCategory">
+
+    <p-tabMenu 
+        [model]="items" 
+        [activeItem]="activeItem" 
+        (activeItemChange)="onActiveItemChange($event)" 
+        styleClass="aloui" />
+</div>
+<div>
+    <section *ngFor="let crepe of items" data-label="Crêpe" style="height: 600px; background: #e2e2e2; margin-bottom: 10px;">
+   
+      <div>
+        <app-list-item></app-list-item>
+      </div>
+    </section>
+  </div>
+  
